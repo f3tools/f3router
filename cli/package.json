@@ -48,5 +48,5 @@
     "esbuild": "^0.25.12",
     "nodemon": "^3.1.14"
   },
-  "homepage": "https://f3tools.github.io/f3router"
+  "homepage": "https://f3tools.vercel.app/f3router"
 }
