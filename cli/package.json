@@ -1,9 +1,9 @@
 {
-  "name": "f3router",
-  "version": "0.5.99",
+  "name": "f3rtr",
+  "version": "0.6.0",
   "description": "f3router CLI - Start and manage f3router server",
   "bin": {
-    "f3router": "./cli.js"
+    "f3rtr": "./cli.js"
   },
   "files": [
     "cli.js",
