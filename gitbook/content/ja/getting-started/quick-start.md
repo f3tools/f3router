@@ -9,7 +9,7 @@ f3routerを5分で起動し、AIリクエストをインテリジェントにル
 ### 1. インストール
 
 ```bash
-npm install -g f3router
+npm install -g f3rtr
 ```
 
 **要件:** Node.js 20+ ([インストール詳細](getting-started/installation.md))

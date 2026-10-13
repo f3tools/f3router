@@ -34,7 +34,7 @@ npm --version
 Instala f3router globalmente para usar desde cualquier lugar:
 
 ```bash
-npm install -g f3router
+npm install -g f3rtr
 ```
 
 **Iniciar f3router:**
@@ -55,7 +55,7 @@ Instala en un proyecto específico:
 ```bash
 mkdir my-f3router
 cd my-f3router
-npm install f3router
+npm install f3rtr
 ```
 
 **Iniciar f3router:**
@@ -283,7 +283,7 @@ echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.bashrc
 source ~/.bashrc
 
 # Luego instalar nuevamente
-npm install -g f3router
+npm install -g f3rtr
 ```
 
 ### Versión de Node.js muy antigua
@@ -372,7 +372,7 @@ pm2 save
 ### Desarrollo local
 
 ```bash
-npm install -g f3router
+npm install -g f3rtr
 f3router
 ```
 
@@ -382,7 +382,7 @@ f3router
 
 ```bash
 # Instalar
-npm install -g f3router
+npm install -g f3rtr
 
 # Configurar
 export JWT_SECRET="your-secure-secret"

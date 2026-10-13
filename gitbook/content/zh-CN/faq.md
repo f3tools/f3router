@@ -198,7 +198,7 @@ npm start
 
 ### Localhost(默认)
 ```bash
-npm install -g f3router
+npm install -g f3rtr
 f3router
 → 仪表盘: http://localhost:3000
 → API: http://localhost:20128/v1

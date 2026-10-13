@@ -9,7 +9,7 @@ Khởi chạy f3router trong 5 phút và bắt đầu định tuyến các reque
 ### 1. Cài đặt
 
 ```bash
-npm install -g f3router
+npm install -g f3rtr
 ```
 
 **Yêu cầu:** Node.js 20+ ([Chi tiết cài đặt](getting-started/installation.md))

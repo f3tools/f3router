@@ -105,7 +105,7 @@ MiniMax経由で200万: $0.40
 
 ```bash
 # グローバルインストール
-npm install -g f3router
+npm install -g f3rtr
 
 # 起動(ダッシュボードが自動で開きます)
 f3router

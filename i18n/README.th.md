@@ -13,9 +13,9 @@
     <img src="../public/providers/openclaw.png" alt="OpenClaw" width="80"/>
   </p>
   
-  [![npm](https://img.shields.io/npm/v/f3router.svg)](https://www.npmjs.com/package/f3router)
-  [![Downloads](https://img.shields.io/npm/dm/f3router.svg)](https://www.npmjs.com/package/f3router)
-  [![License](https://img.shields.io/npm/l/f3router.svg)](https://github.com/f3tools/f3router/blob/main/LICENSE)
+  [![npm](https://img.shields.io/npm/v/f3rtr.svg)](https://www.npmjs.com/package/f3rtr)
+  [![Downloads](https://img.shields.io/npm/dm/f3rtr.svg)](https://www.npmjs.com/package/f3rtr)
+  [![License](https://img.shields.io/npm/l/f3rtr.svg)](https://github.com/f3tools/f3router/blob/main/LICENSE)
   
   [🚀 เริ่มต้นใช้งาน](#-quick-start) • [💡 ฟีเจอร์](#-key-features) • [📖 การตั้งค่า](#-setup-guide) • [🌐 เว็บไซต์](https://9router.com)
 </div>
@@ -74,7 +74,7 @@
 **1. ติดตั้งแบบ Global:**
 
 ```bash
-npm install -g f3router
+npm install -g f3rtr
 f3router
 ```
 

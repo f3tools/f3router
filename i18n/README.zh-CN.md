@@ -11,9 +11,9 @@
     <img src="../public/providers/openclaw.png" alt="OpenClaw" width="80"/>
   </p>
   
-  [![npm](https://img.shields.io/npm/v/f3router.svg)](https://www.npmjs.com/package/f3router)
-  [![Downloads](https://img.shields.io/npm/dm/f3router.svg)](https://www.npmjs.com/package/f3router)
-  [![License](https://img.shields.io/npm/l/f3router.svg)](https://github.com/f3tools/f3router/blob/main/LICENSE)
+  [![npm](https://img.shields.io/npm/v/f3rtr.svg)](https://www.npmjs.com/package/f3rtr)
+  [![Downloads](https://img.shields.io/npm/dm/f3rtr.svg)](https://www.npmjs.com/package/f3rtr)
+  [![License](https://img.shields.io/npm/l/f3rtr.svg)](https://github.com/f3tools/f3router/blob/main/LICENSE)
   
   [🚀 快速开始](#-quick-start) • [💡 特性](#-key-features) • [📖 设置](#-setup) • [🌐 网站](https://9router.com)
 </div>
@@ -71,7 +71,7 @@
 **1. 全局安装：**
 
 ```bash
-npm install -g f3router
+npm install -g f3rtr
 f3router
 ```
 

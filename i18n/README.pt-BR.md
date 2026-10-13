@@ -7,11 +7,9 @@
   
   **Conecte todas as ferramentas de código de IA (Claude Code, Cursor, Antigravity, Copilot, Codex, Gemini, OpenCode, Cline, OpenClaw...) a mais de 40 provedores de IA e mais de 100 modelos.**
   
-  [![npm](https://img.shields.io/npm/v/f3router.svg)](https://www.npmjs.com/package/f3router)
-  [![Downloads](https://img.shields.io/npm/dm/f3router.svg)](https://www.npmjs.com/package/f3router)
-  [![Docker Pulls](https://img.shields.io/docker/pulls/f3tools/f3router.svg?logo=docker&label=Docker%20pulls)](https://hub.docker.com/r/f3tools/f3router)
-  [![GHCR](https://img.shields.io/badge/GHCR-decolua%2Ff3router-blue?logo=github)](https://github.com/f3tools/f3router/pkgs/container/f3router)
-  [![Licença](https://img.shields.io/npm/l/f3router.svg)](https://github.com/f3tools/f3router/blob/main/LICENSE)
+  [![npm](https://img.shields.io/npm/v/f3rtr.svg)](https://www.npmjs.com/package/f3rtr)
+  [![Downloads](https://img.shields.io/npm/dm/f3rtr.svg)](https://www.npmjs.com/package/f3rtr)
+  [![Licença](https://img.shields.io/npm/l/f3rtr.svg)](https://github.com/f3tools/f3router/blob/main/LICENSE)
 
 [🚀 Início rápido](#-início-rápido) • [💡 Recursos](#-principais-recursos) • [📖 Configuração](#-guia-de-configuração) • [🌐 Site](https://9router.com)
 
@@ -74,7 +72,7 @@ Resultado: programe sem interrupções, com custo mínimo e economia de 20% a 40
 **1. Instale globalmente:**
 
 ```bash
-npm install -g f3router
+npm install -g f3rtr
 f3router
 ```
 
@@ -1238,7 +1236,6 @@ pm2 startup
 Imagens publicadas (multiplataforma `linux/amd64` + `linux/arm64`):
 
 - Hub Docker: [`f3tools/f3router`](https://hub.docker.com/r/f3tools/f3router)
-- GHCR: [`ghcr.io/f3tools/f3router`](https://github.com/f3tools/f3router/pkgs/container/f3router)
 
 **Início rápido (use imagem publicada):**
 

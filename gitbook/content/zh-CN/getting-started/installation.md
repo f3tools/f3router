@@ -34,7 +34,7 @@ npm --version
 全局安装,任何位置都能使用:
 
 ```bash
-npm install -g f3router
+npm install -g f3rtr
 ```
 
 **启动 f3router:**
@@ -55,7 +55,7 @@ f3router
 ```bash
 mkdir my-f3router
 cd my-f3router
-npm install f3router
+npm install f3rtr
 ```
 
 **启动 f3router:**
@@ -283,7 +283,7 @@ echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.bashrc
 source ~/.bashrc
 
 # 然后重新安装
-npm install -g f3router
+npm install -g f3rtr
 ```
 
 ### Node.js 版本过低
@@ -372,7 +372,7 @@ pm2 save
 ### 本地开发
 
 ```bash
-npm install -g f3router
+npm install -g f3rtr
 f3router
 ```
 
@@ -382,7 +382,7 @@ f3router
 
 ```bash
 # 安装
-npm install -g f3router
+npm install -g f3rtr
 
 # 配置
 export JWT_SECRET="your-secure-secret"

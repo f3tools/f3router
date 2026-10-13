@@ -9,7 +9,7 @@
 npm経由でf3routerをグローバルインストール:
 
 ```bash
-npm install -g f3router
+npm install -g f3rtr
 ```
 
 **要件:**
@@ -113,7 +113,7 @@ kill -9 <PID>
 
 ```bash
 # sudoを使用 (非推奨)
-sudo npm install -g f3router
+sudo npm install -g f3rtr
 
 # またはnpm権限を修正 (推奨)
 mkdir ~/.npm-global

@@ -9,7 +9,7 @@ Pon en marcha f3router en 5 minutos y comienza a enrutar solicitudes de IA de fo
 ### 1. Instalar
 
 ```bash
-npm install -g f3router
+npm install -g f3rtr
 ```
 
 **Requisitos:** Node.js 20+ ([Detalles de instalación](getting-started/installation.md))

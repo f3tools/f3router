@@ -34,7 +34,7 @@ npm --version
 どこからでも使用できるようにf3routerをグローバルインストール:
 
 ```bash
-npm install -g f3router
+npm install -g f3rtr
 ```
 
 **f3routerを起動:**
@@ -55,7 +55,7 @@ f3router
 ```bash
 mkdir my-f3router
 cd my-f3router
-npm install f3router
+npm install f3rtr
 ```
 
 **f3routerを起動:**
@@ -283,7 +283,7 @@ echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.bashrc
 source ~/.bashrc
 
 # 再度インストール
-npm install -g f3router
+npm install -g f3rtr
 ```
 
 ### Node.jsバージョンが古すぎる
@@ -372,7 +372,7 @@ pm2 save
 ### ローカル開発
 
 ```bash
-npm install -g f3router
+npm install -g f3rtr
 f3router
 ```
 
@@ -382,7 +382,7 @@ f3router
 
 ```bash
 # インストール
-npm install -g f3router
+npm install -g f3rtr
 
 # 設定
 export JWT_SECRET="your-secure-secret"

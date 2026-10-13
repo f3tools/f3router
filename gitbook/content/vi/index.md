@@ -105,7 +105,7 @@ Bắt đầu trong 2 phút:
 
 ```bash
 # Install globally
-npm install -g f3router
+npm install -g f3rtr
 
 # Start (dashboard opens automatically)
 f3router

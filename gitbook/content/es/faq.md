@@ -198,7 +198,7 @@ Consulta la [guía de integración de Cursor](integration/cursor.md) para detall
 
 ### Localhost (Por defecto)
 ```bash
-npm install -g f3router
+npm install -g f3rtr
 f3router
 → Dashboard: http://localhost:3000
 → API: http://localhost:20128/v1

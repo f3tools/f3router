@@ -8,9 +8,9 @@
   
   **将所有 AI 编程工具（Claude Code、Cursor、Antigravity、Copilot、Codex、Gemini、OpenCode、Cline、OpenClaw...）连接到 40+ AI 提供商和 100+ 模型。**
   
-  [![npm](https://img.shields.io/npm/v/f3router.svg)](https://www.npmjs.com/package/f3router)
-  [![Downloads](https://img.shields.io/npm/dm/f3router.svg)](https://www.npmjs.com/package/f3router)
-  [![License](https://img.shields.io/npm/l/f3router.svg)](https://github.com/f3tools/f3router/blob/main/LICENSE)
+  [![npm](https://img.shields.io/npm/v/f3rtr.svg)](https://www.npmjs.com/package/f3rtr)
+  [![Downloads](https://img.shields.io/npm/dm/f3rtr.svg)](https://www.npmjs.com/package/f3rtr)
+  [![License](https://img.shields.io/npm/l/f3rtr.svg)](https://github.com/f3tools/f3router/blob/main/LICENSE)
 
 [🚀 快速开始](#-快速开始) • [💡 功能特点](#-主要功能) • [📖 设置指南](#-设置指南) • [🌐 网站](https://9router.com)
 
@@ -72,7 +72,7 @@
 **1. 全局安装：**
 
 ```bash
-npm install -g f3router
+npm install -g f3rtr
 f3router
 ```
 

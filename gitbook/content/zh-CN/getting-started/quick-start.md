@@ -9,7 +9,7 @@
 ### 1. 安装
 
 ```bash
-npm install -g f3router
+npm install -g f3rtr
 ```
 
 **要求:** Node.js 20+([安装详情](getting-started/installation.md))

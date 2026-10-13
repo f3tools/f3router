@@ -9,7 +9,7 @@ Ejecuta f3router en tu máquina local para desarrollo y uso personal.
 Instala f3router globalmente vía npm:
 
 ```bash
-npm install -g f3router
+npm install -g f3rtr
 ```
 
 **Requisitos:**
@@ -113,7 +113,7 @@ Si encuentras errores de permisos durante la instalación:
 
 ```bash
 # Usar sudo (no recomendado)
-sudo npm install -g f3router
+sudo npm install -g f3rtr
 
 # O corregir los permisos de npm (recomendado)
 mkdir ~/.npm-global

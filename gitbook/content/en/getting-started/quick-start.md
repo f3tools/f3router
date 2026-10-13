@@ -9,7 +9,7 @@ Get f3router running in 5 minutes and start routing AI requests intelligently.
 ### 1. Install
 
 ```bash
-npm install -g f3router
+npm install -g f3rtr
 ```
 
 **Requirements:** Node.js 20+ ([Installation details](getting-started/installation.md))

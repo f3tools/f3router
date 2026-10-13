@@ -105,7 +105,7 @@ Comienza en 2 minutos:
 
 ```bash
 # Instala globalmente
-npm install -g f3router
+npm install -g f3rtr
 
 # Inicia (el dashboard se abre automáticamente)
 f3router

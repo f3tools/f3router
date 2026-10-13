@@ -7,8 +7,8 @@
   
   **Kết nối tất cả công cụ AI Code (Claude Code, Codex, Cursor, Cline, Copilot, Antigravity...) tới 40+ Nhà cung cấp AI & 100+ Mô hình.**
   
-  [![npm](https://img.shields.io/npm/v/f3router.svg)](https://www.npmjs.com/package/f3router)
-  [![Downloads](https://img.shields.io/npm/dm/f3router.svg)](https://www.npmjs.com/package/f3router)
+  [![npm](https://img.shields.io/npm/v/f3rtr.svg)](https://www.npmjs.com/package/f3rtr)
+  [![Downloads](https://img.shields.io/npm/dm/f3rtr.svg)](https://www.npmjs.com/package/f3rtr)
   [![License](https://github.com/f3tools/f3router/blob/main/LICENSE)](https://github.com/f3tools/f3router/blob/main/LICENSE)
   
   [🚀 Bắt đầu nhanh](#-quick-start) • [💡 Tính năng](#-key-features) • [📖 Cài đặt](#-setup-guide) • [🌐 Website](https://9router.com)
@@ -69,7 +69,7 @@ Kết quả: Không bao giờ ngừng code, chi phí tối thiểu + tiết ki�
 **1. Cài đặt toàn cục:**
 
 ```bash
-npm install -g f3router
+npm install -g f3rtr
 f3router
 ```
 

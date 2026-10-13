@@ -7,11 +7,9 @@
   
   **همه ابزارهای کدنویسی مبتنی بر هوش مصنوعی (Claude Code، Cursor، Antigravity، Copilot، Codex، Gemini، OpenCode، Cline، OpenClaw...) را به بیش از ۴۰ ارائه‌دهنده و ۱۰۰+ مدل متصل کنید.**
   
-  [![npm](https://img.shields.io/npm/v/f3router.svg)](https://www.npmjs.com/package/f3router)
-  [![Downloads](https://img.shields.io/npm/dm/f3router.svg)](https://www.npmjs.com/package/f3router)
-  [![Docker Pulls](https://img.shields.io/docker/pulls/f3tools/f3router.svg?logo=docker&label=Docker%20pulls)](https://hub.docker.com/r/f3tools/f3router)
-  [![GHCR](https://img.shields.io/badge/GHCR-decolua%2Ff3router-blue?logo=github)](https://github.com/f3tools/f3router/pkgs/container/f3router)
-  [![License](https://img.shields.io/npm/l/f3router.svg)](https://github.com/f3tools/f3router/blob/main/LICENSE)
+  [![npm](https://img.shields.io/npm/v/f3rtr.svg)](https://www.npmjs.com/package/f3rtr)
+  [![Downloads](https://img.shields.io/npm/dm/f3rtr.svg)](https://www.npmjs.com/package/f3rtr)
+  [![License](https://img.shields.io/npm/l/f3rtr.svg)](https://github.com/f3tools/f3router/blob/main/LICENSE)
 
 [🚀 شروع سریع](#-شروع-سریع) • [💡 ویژگی‌ها](#-ویژگی‌های-کلیدی) • [📖 راه‌اندازی](#-راهنمای-راه‌اندازی) • [🌐 وب‌سایت](https://9router.com)
 
@@ -74,7 +72,7 @@
 **۱. نصب سراسری:**
 
 ```bash
-npm install -g f3router
+npm install -g f3rtr
 f3router
 ```
 
@@ -1154,8 +1152,6 @@ pm2 startup
 
 تصاویر منتشر شده (چند پلتفرم `linux/amd64` + `linux/arm64`):
 
-- Docker Hub: [`f3tools/f3router`](https://hub.docker.com/r/f3tools/f3router)
-- GHCR: [`ghcr.io/f3tools/f3router`](https://github.com/f3tools/f3router/pkgs/container/f3router)
 
 **شروع سریع (استفاده از تصویر منتشر شده):**
 

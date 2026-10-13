@@ -9,7 +9,7 @@ Chạy f3router trên máy cá nhân để phát triển và dùng cá nhân.
 Cài đặt f3router toàn cục qua npm:
 
 ```bash
-npm install -g f3router
+npm install -g f3rtr
 ```
 
 **Yêu cầu:**
@@ -113,7 +113,7 @@ Nếu gặp lỗi permission khi cài đặt:
 
 ```bash
 # Use sudo (not recommended)
-sudo npm install -g f3router
+sudo npm install -g f3rtr
 
 # Or fix npm permissions (recommended)
 mkdir ~/.npm-global
