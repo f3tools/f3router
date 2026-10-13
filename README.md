@@ -1,5 +1,4 @@
 
-> **Fork notice:** this project is a fork of [decolua/9router](https://github.com/decolua/9router) (MIT). Original copyright and license notices are kept in LICENSE.
 <div align="center">
   <img src="./images/f3router.png?1" alt="f3router Dashboard" width="800"/>
   
@@ -1548,3 +1547,7 @@ MIT License - see [LICENSE](LICENSE) for details.
 <div align="center">
   <sub>Built with ❤️ for developers who code 24/7</sub>
 </div>
+
+## License
+
+This project is derived from [decolua/9router](https://github.com/decolua/9router) under the MIT license. The original copyright and license notices are retained in [LICENSE](./LICENSE).
