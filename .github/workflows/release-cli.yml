@@ -50,7 +50,7 @@ jobs:
           git add package.json "${{ github.workspace }}/package.json"
           git commit -m "Release f3rtr $VERSION"
           git tag "cli-v$VERSION"
-          git push origin HEAD:main --follow-tags
+          git push origin HEAD:main "refs/tags/cli-v$VERSION"
 
       - name: Check tag matches package version
         if: startsWith(github.ref, 'refs/tags/cli-v')
