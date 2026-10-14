@@ -61,6 +61,10 @@ jobs:
             exit 1
           fi
 
+      - name: Install app dependencies (Next.js build runs from repo root)
+        working-directory: ${{ github.workspace }}
+        run: npm install --no-audit --no-fund
+
       - name: Install and build
         run: |
           npm install --no-audit --no-fund
