@@ -1,6 +1,6 @@
 {
   "name": "f3router-app",
-  "version": "0.5.99",
+  "version": "0.6.1",
   "description": "f3router web dashboard",
   "private": true,
   "scripts": {
