@@ -10,10 +10,9 @@ Aggregate free tiers from dozens of providers, plus custom OpenAI-compatible cha
 [![GitHub stars](https://img.shields.io/github/stars/f3tools/f3router?style=flat&logo=github&color=yellow)](https://github.com/f3tools/f3router/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
-[![Docker image](https://img.shields.io/badge/ghcr.io-f3router-2496ED?logo=docker&logoColor=white)](https://github.com/f3tools/f3router/pkgs/container/f3router)
 [![Ask DeepWiki](https://img.shields.io/badge/DeepWiki-Ask-blue)](https://deepwiki.com/f3tools/f3router)
 
-**[f3router.co](https://f3tools.vercel.app/)** · browse the full catalog: 474 model families, 635 free endpoints
+**[f3tools.vercel.app/f3router](https://f3tools.vercel.app/f3router/)** · browse the full catalog: 474 model families, 635 free endpoints
 
 **English** · [简体中文](README.zh-cn.md) · [Русский](README.ru.md)
 
@@ -60,7 +59,7 @@ Every serious AI lab now offers a free tier, a few million tokens a month, a few
 
 The problem is that stacking them by hand is painful: thirty-four different SDKs, thirty-four different rate limits, thirty-four places a request can fail. f3router collapses that into one OpenAI-compatible endpoint. Point any OpenAI client library at your local server, and it routes transparently across whichever providers you've added keys for.
 
-And the free-tier landscape shifts weekly: providers launch models, retire them, and change quotas without notice. f3router tracks all of that for you. The router pulls a signed model catalog from [f3router.co](https://f3tools.vercel.app) on its own, so your install keeps up without a `git pull`. See [Premium (live catalog)](#premium-live-catalog) for how fast it keeps up.
+And the free-tier landscape shifts weekly: providers launch models, retire them, and change quotas without notice. f3router tracks all of that for you. The router pulls a signed model catalog from [f3tools.vercel.app/f3router](https://f3tools.vercel.app/f3router/) on its own, so your install keeps up without a `git pull`. See [Premium (live catalog)](#premium-live-catalog) for how fast it keeps up.
 
 ![The free tier, stacked — ~7.4B tokens of free inference per month across 34 providers](repo-assets/free-tier.png)
 
@@ -96,7 +95,7 @@ And the free-tier landscape shifts weekly: providers launch models, retire them,
 
 Plus a **custom** provider — point chat, embedding, image, or audio models at any OpenAI-compatible endpoint (llama.cpp, LM Studio, vLLM, a local Ollama, or a remote gateway) from the Keys page.
 
-The full, always-current list lives at **[f3router.co/models](https://f3tools.vercel.app/)** with per-model rate limits, context windows, and free-token budgets.
+The full, always-current list lives at **[f3tools.vercel.app/f3router](https://f3tools.vercel.app/f3router/)** with per-model rate limits, context windows, and free-token budgets.
 
 ## Compatible CLIs & coding agents
 
@@ -147,7 +146,7 @@ Based on public documentation, July 2026 — corrections welcome.
 - **Smart routing, six strategies** — live per-model speed/capability/reliability scores rank your chain; automatic fallover retries the next model on 429/5xx with cooldowns and key rotation. [Routing in detail →](docs/en/architecture/00-high-level-index.md#how-it-works)
 - **Unified models & profiles** — the same model on several providers collapses into one entry with strict in-group failover; named fallback-chain profiles (a coding chain, a vision chain) switch from the dashboard or per request via `auto:<profile>`, and custom chains can be renamed in place from the chain manager.
 - **Per-key rate tracking** — RPM/RPD/TPM/TPD counters per `(platform, model, key)` that learn providers' reported ceilings, so routing always stays under every cap.
-- **Self-updating model catalog** — the router syncs a signed catalog from f3router.co twice a day: new models, quota changes, and provider quirk fixes land automatically. Free installs track the monthly snapshot, which each model joins 30 days after it lands in the live feed; premium routers get it same-day. [Premium →](#premium-live-catalog)
+- **Self-updating model catalog** — the router syncs a signed catalog from f3tools.vercel.app/f3router twice a day: new models, quota changes, and provider quirk fixes land automatically. Free installs track the monthly snapshot, which each model joins 30 days after it lands in the live feed; premium routers get it same-day. [Premium →](#premium-live-catalog)
 - **Sticky sessions & context handoff** — conversations stay on one model for 30 minutes; an optional compact handoff note keeps the thread coherent when a mid-chat switch does happen. [Details →](docs/en/clients/01-agent-clients.md#context-handoff)
 - **Prompt compression (opt-in)** — a shared, fail-open request pipeline can deduplicate prompts, filter tool output, compact repeated JSON, and trim stale context before cache lookup and routing. [Details →](docs/en/compression/01-compression-pipeline.md)
 - **Encrypted keys, one token out** — provider keys are AES-256-GCM encrypted in SQLite and decrypted in-memory per request; your apps only ever see a single unified `f3router-…` bearer token.
@@ -226,7 +225,7 @@ welcome.
 ## Premium (live catalog)
 
 The router keeps its model catalog fresh on its own: it pulls a signed catalog
-from [f3router.co](https://f3tools.vercel.app) twice a day and applies new models,
+from [f3tools.vercel.app/f3router](https://f3tools.vercel.app/f3router/) twice a day and applies new models,
 quota changes, and provider quirk fixes to your local DB. Your own
 enable/disable choices and custom providers are never touched, and every
 download is verified against a pinned Ed25519 key before it is applied.
@@ -235,7 +234,7 @@ The catalog currently tracks **34 providers**, **474 model families**, **635
 free provider/model endpoints** (584 chat, 41 embeddings, 7 transcription, 3
 video), and roughly **7.4 billion tokens per month** of listed free-tier
 capacity. Browse the full set at
-**[f3router.co/models](https://f3tools.vercel.app/)**.
+**[f3tools.vercel.app/f3router](https://f3tools.vercel.app/f3router/)**.
 
 Free installs pull the same signed catalog, but from the monthly snapshot: a
 model joins it 30 days after it lands in the live feed, so the free build
