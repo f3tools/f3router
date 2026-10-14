@@ -10,10 +10,9 @@
 [![GitHub stars](https://img.shields.io/github/stars/f3tools/f3router?style=flat&logo=github&color=yellow)](https://github.com/f3tools/f3router/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#参与贡献)
-[![Docker image](https://img.shields.io/badge/ghcr.io-f3router-2496ED?logo=docker&logoColor=white)](https://github.com/f3tools/f3router/pkgs/container/f3router)
 [![Ask DeepWiki](https://img.shields.io/badge/DeepWiki-Ask-blue)](https://deepwiki.com/f3tools/f3router)
 
-**[f3router.co](https://f3tools.vercel.app/)** · 浏览完整目录：474 个模型系列，635 个免费端点
+**[f3tools.vercel.app/f3router](https://f3tools.vercel.app/f3router/)** · 浏览完整目录：474 个模型系列，635 个免费端点
 
 [English](README.md) · **简体中文**
 
@@ -57,7 +56,7 @@
 
 问题在于手工叠加太痛苦：三十四套不同的 SDK，三十四种不同的限流规则，三十四个请求可能失败的地方。f3router 把这些收拢成一个 OpenAI 兼容端点。把任意 OpenAI 客户端库指向你的本地服务，它就会在你添加过密钥的提供方之间透明路由。
 
-而且免费额度的格局每周都在变：提供方会上线新模型、下线旧模型，并且不打招呼就调整额度。这些 f3router 都替你盯着。路由器会自行从 [f3router.co](https://f3tools.vercel.app) 拉取经过签名的模型目录，所以你的部署不用 `git pull` 也能跟上。跟进速度见 [Premium 实时目录](#premium-实时目录)。
+而且免费额度的格局每周都在变：提供方会上线新模型、下线旧模型，并且不打招呼就调整额度。这些 f3router 都替你盯着。路由器会自行从 [f3tools.vercel.app/f3router](https://f3tools.vercel.app/f3router/) 拉取经过签名的模型目录，所以你的部署不用 `git pull` 也能跟上。跟进速度见 [Premium 实时目录](#premium-实时目录)。
 
 ![叠加后的免费额度 —— 34 家提供方合计每月约 74 亿词元的免费推理](repo-assets/free-tier.png)
 
@@ -93,7 +92,7 @@
 
 此外还有 **自定义** 提供方：在密钥页上，把聊天、嵌入、图像或音频模型指向任意 OpenAI 兼容端点（llama.cpp、LM Studio、vLLM、本地 Ollama，或者一个远程网关）。
 
-完整且始终最新的列表在 **[f3router.co/models](https://f3tools.vercel.app/)**，含每个模型的限流规则、上下文窗口和免费词元额度。
+完整且始终最新的列表在 **[f3tools.vercel.app/f3router](https://f3tools.vercel.app/f3router/)**，含每个模型的限流规则、上下文窗口和免费词元额度。
 
 ## 兼容的 CLI 与编程智能体
 
@@ -151,7 +150,7 @@
 - **智能路由，六种策略** —— 实时的每模型速度、能力、稳定性评分决定你的链路顺序；遇到 429/5xx 时自动转移到下一个模型，并带冷却和密钥轮换。[路由详解 →](docs/zh-cn/architecture/00-high-level-index.md#工作原理)
 - **统一模型与配置档** —— 同一个模型在多家提供方上会合并成一个条目，并在组内严格故障转移；命名的回退链配置档（比如一条编程链、一条视觉链）可以在仪表盘里切换，也可以按请求用 `auto:<profile>` 指定。
 - **按密钥的限流跟踪** —— 以 `(平台, 模型, 密钥)` 为单位的 RPM/RPD/TPM/TPD 计数器，会学习提供方公布的上限，让路由始终不越线。
-- **自更新的模型目录** —— 路由器每天两次从 f3router.co 同步经过签名的目录：新模型、额度变更和提供方的怪癖修复都会自动生效。[Premium →](#premium-实时目录)
+- **自更新的模型目录** —— 路由器每天两次从 f3tools.vercel.app/f3router 同步经过签名的目录：新模型、额度变更和提供方的怪癖修复都会自动生效。[Premium →](#premium-实时目录)
 - **粘性会话与上下文交接** —— 对话会在同一个模型上停留 30 分钟；如果中途确实换了模型，可选的精简交接说明能让话题保持连贯。[详情 →](docs/en/clients/01-agent-clients.md#context-handoff)
 - **提示词压缩（可选开启）** —— 一条共享且失败即放行的请求流程，可以在缓存查找和路由之前对提示词去重、过滤工具输出、压紧重复的 JSON，并裁掉过时的上下文。[详情 →](docs/zh-cn/compression/01-compression-pipeline.md)
 - **密钥加密存储，对外只有一个令牌** —— 提供方密钥以 AES-256-GCM 加密存放在 SQLite 中，每次请求时在内存里解密；你的应用自始至终只看到一个统一的 `f3router-…` bearer 令牌。
@@ -231,9 +230,9 @@ f3router 在设计上是本地优先、单用户的。你的提供方密钥留�
 
 ## Premium 实时目录
 
-路由器会自行保持模型目录的新鲜：它每天两次从 [f3router.co](https://f3tools.vercel.app) 拉取经过签名的目录，把新模型、额度变更和提供方的怪癖修复应用到你的本地数据库。你自己的启用/停用选择和自定义提供方永远不会被动到，而且每次下载在应用之前都会用固定的 Ed25519 公钥验签。
+路由器会自行保持模型目录的新鲜：它每天两次从 [f3tools.vercel.app/f3router](https://f3tools.vercel.app/f3router/) 拉取经过签名的目录，把新模型、额度变更和提供方的怪癖修复应用到你的本地数据库。你自己的启用/停用选择和自定义提供方永远不会被动到，而且每次下载在应用之前都会用固定的 Ed25519 公钥验签。
 
-目录目前收录 **34 家提供方**、**474 个模型系列**、**635 个免费提供方/模型端点**（584 个聊天、41 个嵌入、7 个转录、3 个视频），以及大约 **每月 74 亿词元** 的免费额度容量。完整内容可在 **[f3router.co/models](https://f3tools.vercel.app/)** 浏览。
+目录目前收录 **34 家提供方**、**474 个模型系列**、**635 个免费提供方/模型端点**（584 个聊天、41 个嵌入、7 个转录、3 个视频），以及大约 **每月 74 亿词元** 的免费额度容量。完整内容可在 **[f3tools.vercel.app/f3router](https://f3tools.vercel.app/f3router/)** 浏览。
 
 Premium 让这份签名目录在你运行的每一个路由器上保持实时。当某家提供方上线了一个强力的免费模型、悄悄收紧了额度，或者改坏了协议格式，订阅了实时源的路由器会在我们发布的第一时间收到更新。
 
